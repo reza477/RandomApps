@@ -1,50 +1,48 @@
-# StudyBuddy 📚
+# Runway Command
 
-A study companion app to help you stay focused and productive.
+Runway Command is a **local-first**, phone-focused Progressive Web App (PWA) for daily BCIT preparation.
 
-## 🚀 Features
+## Stack
 
-- Coming soon!
+- Vite
+- React
+- TypeScript
+- Plain CSS
+- vite-plugin-pwa
+- localStorage (no backend, no API, no auth)
 
-## 🛠️ Getting Started
+## Features
 
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/yourusername/studybuddy.git
-   ```
+- Today page auto-selects the current weekday.
+- Week page with all day themes and mentor quotes.
+- Edit page to modify any day's plan and schedule blocks.
+- Settings page for global bad-night list and full reset.
+- Daily checkbox state that auto-resets each day.
+- Broken Day Mode fallback.
+- Night Blade quick jump.
+- Offline installable PWA.
 
-2. Open `index.html` in your web browser
+## Local Development
 
-That's it! No build process or dependencies required.
-
-## 📁 Project Structure
-
+```bash
+npm install
+npm run dev
 ```
-studybuddy/
-  ├── index.html          # Main HTML structure
-  ├── style.css           # Styling
-  ├── app.js              # JavaScript functionality
-  └── README.md           # You are here!
+
+## Production Build
+
+```bash
+npm run build
+npm run preview
 ```
 
-## 🤝 Contributing
+## Storage
 
-Contributions are welcome! Please read [CONTRIBUTING.md](.github/CONTRIBUTING.md) for details on our code of conduct and the process for submitting pull requests.
+All data is stored in browser `localStorage` on-device:
 
-## 📝 License
+- `runway-command:plans:v1`
+- `runway-command:checks:v1`
+- `runway-command:checks-date:v1`
+- `runway-command:settings:v1`
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## 💡 Roadmap
-
-- [ ] Add feature 1
-- [ ] Add feature 2
-- [ ] Add feature 3
-
-## ❓ Support
-
-If you have any questions or run into issues, please [open an issue](https://github.com/yourusername/studybuddy/issues).
-
----
-
-Made with ❤️ by VibeCoding
+For mobile install, open the deployed/local site in your phone browser and choose **Add to Home Screen**.
