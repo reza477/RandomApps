@@ -1,0 +1,179 @@
+:root {
+  color-scheme: dark;
+  font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+  background: #0b0b0f;
+  color: #e8e8e8;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #0b0b0f;
+}
+
+.app-shell {
+  min-height: 100vh;
+  max-width: 560px;
+  margin: 0 auto;
+  padding: 16px 14px 90px;
+}
+
+.header h1 {
+  margin: 0;
+  letter-spacing: 0.02em;
+  font-size: 2rem;
+}
+
+.header p {
+  margin-top: 6px;
+  color: #9ca3af;
+}
+
+.main {
+  margin-top: 12px;
+}
+
+.stack {
+  display: grid;
+  gap: 12px;
+}
+
+.card {
+  background: #141419;
+  border: 1px solid #252531;
+  border-radius: 14px;
+  padding: 14px;
+}
+
+.quote-card {
+  border-color: #366879;
+}
+
+.mission-card {
+  border-color: #2f5b3a;
+}
+
+.warning-card {
+  border-color: #814040;
+}
+
+.night-card {
+  border-color: #4a3b7f;
+}
+
+.broken-card {
+  border-color: #9b7d2e;
+}
+
+h2,
+h3 {
+  margin-top: 0;
+}
+
+.quote {
+  font-size: 1.05rem;
+  color: #d6d6d6;
+}
+
+.meta,
+.reminder {
+  color: #a0a4b4;
+}
+
+.schedule-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 8px;
+}
+
+.schedule-item label {
+  display: grid;
+  grid-template-columns: 20px 58px 1fr;
+  gap: 8px;
+  align-items: start;
+}
+
+.time {
+  color: #8be9fd;
+}
+
+.task {
+  color: #e8e8e8;
+}
+
+.card-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+button,
+input,
+textarea,
+select {
+  width: 100%;
+  background: #101014;
+  color: #e8e8e8;
+  border: 1px solid #2e2e3a;
+  border-radius: 10px;
+  padding: 10px;
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+.primary-btn {
+  border-color: #8be9fd;
+}
+
+.secondary-btn {
+  width: auto;
+}
+
+.danger-btn {
+  border-color: #a93d3d;
+}
+
+.tab-bar {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 8px;
+  padding: 12px;
+  background: rgba(6, 6, 8, 0.92);
+  border-top: 1px solid #23232c;
+}
+
+.tab {
+  padding: 10px 8px;
+}
+
+.tab.active {
+  border-color: #8be9fd;
+}
+
+.schedule-edit-row {
+  display: grid;
+  grid-template-columns: 90px 1fr;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+@media (min-width: 700px) {
+  .tab-bar {
+    left: calc(50% - 280px);
+    right: calc(50% - 280px);
+    border-radius: 12px 12px 0 0;
+  }
+}
